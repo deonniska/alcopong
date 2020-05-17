@@ -1,0 +1,83 @@
+.lives {
+    height: 70px;
+    width: 480px;
+    border: 1px solid grey;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+.beer {
+    width: 40px;
+    height: 50px;
+    background-image: url(beer.jpg);
+    background-size: 40px 50px;
+    background-repeat: no-repeat;
+    margin: 10px 30px 10px 10px;
+    float: left;
+}
+
+.says {
+    height: 50px;
+    width: 460px;
+    border: 1px solid grey;
+    border-radius: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: darkblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.start {
+    width: 480px;
+    height: 480px;
+    background-image: url(capitan.jpg);
+    background-size: 480px;
+}
+
+button.btnStart {
+    margin: 185px;
+    background-color: #2a21bd;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gameOver {
+    width: 480px;
+    height: 480px;
+    background-image: url(shit.jpg);
+    background-size: 480px;
+}
+
+.shit {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #fff;
+    margin-top: 150px;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button.btnMore {
+    margin: 30px 185px;
+    background-color: #2a21bd;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

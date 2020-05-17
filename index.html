@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pong.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pong</title>
+</head>
+<body>
+    <div class="start show">
+        <button class="btnStart" onclick="start()">Запустить алкопонг</button>
+    </div>
+    <div class="game hidden">
+        <div class="lives">
+            <div class="beer"></div>
+            <div class="beer"></div>
+            <div class="beer"></div>
+            <div class="beer"></div>
+            <div class="beer"></div>
+            <div class="beer"></div>
+        </div>
+        <canvas id="canvas">wtf??</canvas>
+        <div class="says">Давайте начнем!</div>
+    </div>
+
+    <div class="gameOver hidden">
+        <span class="shit"></span>
+        <button class="btnMore" onclick="startWithoutMusic()">Еще!?</button>
+    </div>
+</body>
+</html>
