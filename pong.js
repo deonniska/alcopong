@@ -25,9 +25,11 @@ let startWithoutMusic = function() {
 
 let start = function() {
     startWithoutMusic();
+    soundMiss = new Sound('miss.mp3');
+    soundWall = new Sound('wall.mp3');
     soundFon = new Sound('fon.mp3');
     soundFon.play();
-    soundFon.onended=function(){
+    soundFon.sound.onended=function(){
         soundFon2 = new Sound('fon2.mp3');
         soundFon2.play();
     };
@@ -60,8 +62,6 @@ let init = function() {
     wallRight = new Item ('#d42929', 470, 10, 10, 300);
     wallBottom = new Item ('#d42929', 0, 310, 480, 10);
     ball = new Ball(60, 50, 5, 1);
-    soundMiss = new Sound('miss.mp3');
-    soundWall = new Sound('wall.mp3');
     update();
     canvas.onmousemove = plaerMove;
 
