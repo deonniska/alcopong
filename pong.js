@@ -174,7 +174,7 @@ class Ball {
             } else {
                 document.getElementsByClassName('lives')[0].insertAdjacentHTML('beforeend','<div class="beer"></div>'.repeat(6));
                 let overBACK = document.getElementsByClassName('gameOver')[0];
-                let rndBack = Math.floor(Math.random() * 8);
+                let rndBack = Math.floor(Math.random() * 7);
                 overBACK.style.backgroundImage = `url(${ends[rndBack]})`;
                 gameOver(this.diff - 5);
             }
