@@ -58,7 +58,7 @@ button.btnStart {
     width: 480px;
     height: 480px;
     background-image: url(shit.jpg);
-    background-size: 480px;
+    background-size: 480px 480px;
 }
 
 .shit {

@@ -8,6 +8,16 @@ var PHRASES = [
     'Такой хуйни я еще не видел!',
 ]
 
+var ends = [
+    'alex.jpg',
+    'alex2.jpg',
+    'egor.jpg',
+    'ruslan.jpg',
+    'slava2.jpg',
+    'vitalus.jpg',
+    'shit.jpg'
+]
+
 let startWithoutMusic = function() {
     let start = document.getElementsByClassName('start')[0].classList;
     start.remove('show');
@@ -162,7 +172,10 @@ class Ball {
                     this.vx = this.diff;
                 }, 1500);
             } else {
-                document.getElementsByClassName('lives')[0].insertAdjacentHTML('beforeend','<div class="beer"></div>'.repeat(6))
+                document.getElementsByClassName('lives')[0].insertAdjacentHTML('beforeend','<div class="beer"></div>'.repeat(6));
+                let overBACK = document.getElementsByClassName('gameOver')[0];
+                let rndBack = Math.floor(Math.random() * 8);
+                overBACK.style.backgroundImage = `url(${ends[rndBack]})`;
                 gameOver(this.diff - 5);
             }
             
